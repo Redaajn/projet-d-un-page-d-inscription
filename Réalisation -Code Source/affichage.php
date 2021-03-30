@@ -52,11 +52,20 @@ $_SESSION['email'] =  $email;
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Information</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" media="print" href="style2.css">
+    <style>
+button{
+    background-color:#2c75dc;
+    color: white;
+}
+  </style>
 </head>
 <body>
+<center><h1>LISTE DES PARTICIPANTS</h1></center>
     <div class="row">
-    <div class="col-md-3">
-<h1>NOM</h1>
+    <div class="col-md-4">
+
+<h3>NOM</h3>
 <ul>
     <?php
         foreach ($NOM as $value) { 
@@ -67,8 +76,8 @@ $_SESSION['email'] =  $email;
     ?>  
 </ul>
 </div>
-<div class="col-md-3">
-<h1>PRENOM</h1>
+<div class="col-md-4">
+<h3>PRENOM</h3>
 <ul>
     <?php
         foreach ($PRENOM as $value) { 
@@ -79,8 +88,8 @@ $_SESSION['email'] =  $email;
     ?>  
 </ul>
 </div>
-<div class="col-md-3">
-<h1>Emails</h1>
+<div class="col-md-4">
+<h3>Emails</h3>
 <ul>
 <?php
         foreach ($email as $value) { 
